@@ -103,7 +103,7 @@ texture = ExtResource("4_kii0l")
 
 [node name="Particle6" type="CharacterBody2D" parent="." unique_id=704512480]
 z_index = 1
-position = Vector2(3138, 1072)
+position = Vector2(3919, 1849)
 script = ExtResource("3_5nx5k")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Particle6" unique_id=412796170]
@@ -125,7 +125,7 @@ texture = ExtResource("4_kii0l")
 
 [node name="Particle8" type="CharacterBody2D" parent="." unique_id=1926655224]
 z_index = 1
-position = Vector2(923, 874)
+position = Vector2(362, 1821)
 script = ExtResource("3_5nx5k")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Particle8" unique_id=1793072627]
@@ -136,7 +136,7 @@ texture = ExtResource("4_kii0l")
 
 [node name="Particle9" type="CharacterBody2D" parent="." unique_id=1579324946]
 z_index = 1
-position = Vector2(670, 1016)
+position = Vector2(1952, 1843)
 script = ExtResource("3_5nx5k")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Particle9" unique_id=2130614535]
@@ -147,7 +147,7 @@ texture = ExtResource("4_kii0l")
 
 [node name="Particle10" type="CharacterBody2D" parent="." unique_id=624305502]
 z_index = 1
-position = Vector2(817, 1278)
+position = Vector2(3395, 1885)
 script = ExtResource("3_5nx5k")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Particle10" unique_id=659152079]
@@ -158,7 +158,7 @@ texture = ExtResource("4_kii0l")
 
 [node name="Particle11" type="CharacterBody2D" parent="." unique_id=1981266056]
 z_index = 1
-position = Vector2(1313, 1489)
+position = Vector2(1097, 1829)
 script = ExtResource("3_5nx5k")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Particle11" unique_id=1944708225]
@@ -169,7 +169,7 @@ texture = ExtResource("4_kii0l")
 
 [node name="Particle12" type="CharacterBody2D" parent="." unique_id=959346736]
 z_index = 1
-position = Vector2(2163, 579)
+position = Vector2(2760, 1856)
 script = ExtResource("3_5nx5k")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Particle12" unique_id=1318470606]
@@ -177,3 +177,11 @@ shape = SubResource("CircleShape2D_wvfmt")
 
 [node name="Sprite2D" type="Sprite2D" parent="Particle12" unique_id=2141744340]
 texture = ExtResource("4_kii0l")
+
+[node name="Label" type="Label" parent="." unique_id=2134216905]
+offset_left = 193.0
+offset_top = 1980.0
+offset_right = 4339.0
+offset_bottom = 2145.0
+theme_override_font_sizes/font_size = 120
+text = "Hello, if you are reading this, I can publish changes to the repo correctly"
