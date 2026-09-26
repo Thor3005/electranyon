@@ -1,0 +1,73 @@
+[gd_scene format=3 uid="uid://dorhpmch613od"]
+
+[ext_resource type="PackedScene" uid="uid://5s52c6iph1hi" path="res://Scenes/Braidsynthesiser.tscn" id="1_oam1e"]
+[ext_resource type="Texture2D" uid="uid://o0mys77650c2" path="res://BASE SVGs/SquareGradient.svg" id="2_gi2oy"]
+[ext_resource type="Script" uid="uid://cm2uclfaksapw" path="res://Scripts/Particle.gd" id="3_5nx5k"]
+[ext_resource type="Texture2D" uid="uid://cqn4xnwxvitt" path="res://BASE SVGs/MediumHaze.svg" id="4_kii0l"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_5nx5k"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_kii0l"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_nn06i"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_x0njb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wvfmt"]
+size = Vector2(310, 309)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_wvfmt"]
+radius = 121.69634
+
+[node name="Node2D" type="Node2D" unique_id=183356206]
+
+[node name="Machine" parent="." unique_id=827521170 instance=ExtResource("1_oam1e")]
+position = Vector2(1478, 936)
+
+[node name="Border" type="StaticBody2D" parent="." unique_id=967755250]
+position = Vector2(1479, 917)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Border" unique_id=1211537137]
+position = Vector2(2024, 68)
+rotation = 4.712389
+shape = SubResource("WorldBoundaryShape2D_5nx5k")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Border" unique_id=459750423]
+position = Vector2(-1494, 83)
+rotation = 1.5707964
+shape = SubResource("WorldBoundaryShape2D_kii0l")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Border" unique_id=607678304]
+position = Vector2(322, -940)
+rotation = 3.1415927
+shape = SubResource("WorldBoundaryShape2D_nn06i")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Border" unique_id=651516987]
+position = Vector2(231, 1183)
+shape = SubResource("WorldBoundaryShape2D_x0njb")
+
+[node name="RigidBody2D" type="RigidBody2D" parent="." unique_id=680692095]
+position = Vector2(2252, 851)
+rotation = 0.49741885
+linear_velocity = Vector2(3000, 0)
+
+[node name="SquareGradient" type="Sprite2D" parent="RigidBody2D" unique_id=1191260327]
+texture = ExtResource("2_gi2oy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D" unique_id=1800576204]
+position = Vector2(-2, -1.5)
+shape = SubResource("RectangleShape2D_wvfmt")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1429762509]
+position = Vector2(1921, 975)
+zoom = Vector2(0.26, 0.26)
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1109580766]
+position = Vector2(2518, 1480)
+script = ExtResource("3_5nx5k")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=73098220]
+shape = SubResource("CircleShape2D_wvfmt")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=677089400]
+texture = ExtResource("4_kii0l")

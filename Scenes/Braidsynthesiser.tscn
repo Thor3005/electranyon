@@ -1,0 +1,120 @@
+[gd_scene format=3 uid="uid://5s52c6iph1hi"]
+
+[ext_resource type="Texture2D" uid="uid://o618tp2cxvs" path="res://Sprites/GlassBulb.png" id="1_8gnti"]
+[ext_resource type="Texture2D" uid="uid://cp3qqnybesp1t" path="res://Sprites/MetalArc.png" id="1_bb4pi"]
+[ext_resource type="Script" uid="uid://cxbgkjextcgwu" path="res://Scenes/Braidosynthesiser.gd" id="1_fxwsy"]
+[ext_resource type="Script" uid="uid://dq0jdud4bv0q6" path="res://Scripts/BulbAnimator.gd" id="2_bb4pi"]
+[ext_resource type="Texture2D" uid="uid://bjfsqhijrpe8i" path="res://Sprites/Drawing-129.sketchpad.png" id="3_fxwsy"]
+[ext_resource type="Texture2D" uid="uid://ypvhkcxcr6c2" path="res://Sprites/Drawing-135.sketchpad.png" id="6_odexp"]
+[ext_resource type="Texture2D" uid="uid://cxsrdh5hyqhnq" path="res://Sprites/Drawing-134.sketchpad.png" id="7_i5717"]
+[ext_resource type="Texture2D" uid="uid://o0mys77650c2" path="res://BASE SVGs/SquareGradient.svg" id="8_i5717"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cq5xc"]
+atlas = ExtResource("3_fxwsy")
+region = Rect2(23, 37, 405, 406)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vo3f8"]
+atlas = ExtResource("3_fxwsy")
+region = Rect2(450, 37, 405, 406)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wvfmt"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cq5xc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vo3f8")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Braidosynthesiser" type="StaticBody2D" unique_id=89816069]
+script = ExtResource("1_fxwsy")
+
+[node name="Drawing135_sketchpad" type="Sprite2D" parent="." unique_id=1933295945]
+modulate = Color(1, 0.9156667, 0.78, 1)
+z_index = -1
+position = Vector2(-721.5, 79.5)
+texture = ExtResource("6_odexp")
+flip_v = true
+
+[node name="Drawing134_sketchpad" type="Sprite2D" parent="." unique_id=1687933415]
+modulate = Color(1, 0.9156667, 0.78, 1)
+z_index = 1
+position = Vector2(-721.5, 84.5)
+texture = ExtResource("7_i5717")
+flip_v = true
+
+[node name="Assembly" type="Node2D" parent="." unique_id=510606607]
+position = Vector2(-10, 126)
+
+[node name="MetalArc" type="Sprite2D" parent="Assembly" unique_id=1724785800]
+modulate = Color(1, 0.90466666, 0.78, 1)
+scale = Vector2(2.53, 2.53)
+texture = ExtResource("1_bb4pi")
+offset = Vector2(0, -13.5)
+
+[node name="GlassBulb" type="Sprite2D" parent="Assembly" unique_id=1946726977]
+unique_name_in_owner = true
+modulate = Color(1, 1, 0.48235294, 1)
+position = Vector2(-148, -478)
+texture = ExtResource("1_8gnti")
+script = ExtResource("2_bb4pi")
+metadata/side = -1
+
+[node name="ParticleIn" type="AnimatedSprite2D" parent="Assembly/GlassBulb" unique_id=1514944170]
+self_modulate = Color(1, 1, 0.48235294, 1)
+position = Vector2(-5, 0)
+scale = Vector2(0.94, 0.94)
+sprite_frames = SubResource("SpriteFrames_wvfmt")
+offset = Vector2(6.45, -0.365)
+
+[node name="ParticleOut" type="AnimatedSprite2D" parent="Assembly/GlassBulb" unique_id=1858797360]
+self_modulate = Color(1, 1, 0.48235294, 1)
+position = Vector2(-3, 0)
+rotation = 398.0742
+scale = Vector2(0.785, 0.785)
+sprite_frames = SubResource("SpriteFrames_wvfmt")
+frame = 1
+offset = Vector2(-1.825, -3.61)
+
+[node name="GlassBulb2" type="Sprite2D" parent="Assembly" unique_id=1423399488]
+unique_name_in_owner = true
+modulate = Color(1, 1, 0.48235294, 1)
+position = Vector2(-148, 478)
+texture = ExtResource("1_8gnti")
+script = ExtResource("2_bb4pi")
+metadata/side = 1
+
+[node name="ParticleIn" type="AnimatedSprite2D" parent="Assembly/GlassBulb2" unique_id=1454266011]
+self_modulate = Color(1, 1, 0.48235294, 1)
+position = Vector2(-5, 0)
+scale = Vector2(0.94, 0.94)
+sprite_frames = SubResource("SpriteFrames_wvfmt")
+offset = Vector2(6.45, -0.365)
+
+[node name="ParticleOut" type="AnimatedSprite2D" parent="Assembly/GlassBulb2" unique_id=1385659009]
+self_modulate = Color(1, 1, 0.48235294, 1)
+position = Vector2(-3, 0)
+rotation = 398.0742
+scale = Vector2(0.785, 0.785)
+sprite_frames = SubResource("SpriteFrames_wvfmt")
+frame = 1
+offset = Vector2(-1.825, -3.61)
+
+[node name="SquareGradient" type="Sprite2D" parent="." unique_id=1214911002]
+modulate = Color(0.574, 0.6412, 0.7, 1)
+position = Vector2(-132.1355, -342.75)
+rotation = 1.5707964
+scale = Vector2(1.296, 0.381)
+texture = ExtResource("8_i5717")
+
+[node name="SquareGradient2" type="Sprite2D" parent="." unique_id=1035602415]
+modulate = Color(0.574, 0.6412, 0.7, 1)
+position = Vector2(-138.13548, 595.99994)
+rotation = 1.5707964
+scale = Vector2(1.296, 0.381)
+texture = ExtResource("8_i5717")

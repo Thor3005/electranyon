@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: SketchAPI 2022.10.24.12 https://api.sketch.io -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketchjs="https://sketch.io/dtd/" sketchjs:metadata="eyJuYW1lIjoiRHJhd2luZy0xMzMuc2tldGNocGFkIiwic3VyZmFjZSI6eyJpc1BhaW50Ijp0cnVlLCJtZXRob2QiOiJmaWxsIiwiYmxlbmQiOiJub3JtYWwiLCJlbmFibGVkIjp0cnVlLCJvcGFjaXR5IjoxLCJ0eXBlIjoicGF0dGVybiIsInBhdHRlcm4iOnsidHlwZSI6InBhdHRlcm4iLCJyZWZsZWN0Ijoibm8tcmVmbGVjdCIsInJlcGVhdCI6InJlcGVhdCIsInNtb290aGluZyI6ZmFsc2UsInNyYyI6InRyYW5zcGFyZW50TGlnaHQiLCJzeCI6MSwic3kiOjEsIngwIjowLjUsIngxIjoxLCJ5MCI6MC41LCJ5MSI6MX0sImlzRmlsbCI6dHJ1ZX0sImNsaXBQYXRoIjp7ImVuYWJsZWQiOnRydWUsInN0eWxlIjp7InN0cm9rZVN0eWxlIjoiYmxhY2siLCJsaW5lV2lkdGgiOjF9fSwiZGVzY3JpcHRpb24iOiJNYWRlIHdpdGggU2tldGNocGFkIiwibWV0YWRhdGEiOnt9LCJleHBvcnREUEkiOjcyLCJleHBvcnRGb3JtYXQiOiJwbmciLCJleHBvcnRRdWFsaXR5IjowLjk1LCJ1bml0cyI6InB4Iiwid2lkdGgiOjE1MzMsImhlaWdodCI6MjAxMywicGFnZXMiOlt7IndpZHRoIjoxNTMzLCJoZWlnaHQiOjIwMTN9XSwidXVpZCI6IjgzZWE2MDFmLTI0YjktNDhiNy04ZDhjLThmNGUzMjA5MzRjZCJ9" width="1533" height="2013" viewBox="0 0 1533 2013">
+<defs>
+	<linearGradient id="dna_3614093409" gradientUnits="userSpaceOnUse" x1="0" x2="173" y1="114.5" y2="114.5">
+		<stop offset="0" style="stop-color:rgb(84, 84, 84);stop-opacity:1;"/>
+		<stop offset="1" style="stop-color:rgb(107, 107, 107);stop-opacity:1;"/>
+	</linearGradient>
+	<linearGradient id="dna_3968610739" gradientUnits="userSpaceOnUse" x1="0" x2="187.81" y1="22.77" y2="0">
+		<stop offset="0" style="stop-color:rgb(84, 84, 84);stop-opacity:1;"/>
+		<stop offset="1" style="stop-color:rgb(107, 107, 107);stop-opacity:1;"/>
+	</linearGradient>
+	<radialGradient id="dna_3282111068" gradientUnits="userSpaceOnUse" cx="46.015062310602374" cy="46.015062310602374" fx="46.015062310602374" fy="46.015062310602374" r="46.015062310602374">
+		<stop offset="5.551115123125783e-17" style="stop-color:#00ffff;"/>
+		<stop offset="1" style="stop-color:rgba(0, 255, 255, 0);stop-opacity:0;"/>
+	</radialGradient>
+	<radialGradient id="dna_3354300712" gradientUnits="userSpaceOnUse" cx="54.96975025498799" cy="54.96975025498799" fx="54.96975025498799" fy="54.96975025498799" r="54.96975025498799">
+		<stop offset="5.551115123125783e-17" style="stop-color:#00ffff;"/>
+		<stop offset="1" style="stop-color:rgba(0, 255, 255, 0);stop-opacity:0;"/>
+	</radialGradient>
+</defs>
+<path style="fill: url(#dna_3614093409); mix-blend-mode: source-over; fill-opacity: 1; vector-effect: non-scaling-stroke;" sketchjs:tool="rectangle" d="M0 0 L173 0 173 229 0 229 z" transform="matrix(7.536436400276766,0,0,7.7933603684680195,29.114772444568608,41.206680525989555)"/>
+<polyline style="fill: #666666; mix-blend-mode: source-over; fill-opacity: 1;" sketchjs:tool="polyline" points="22.63,24.87 22.15,251.87 0,228 0,0" transform="matrix(7.79336036846802,0,0,7.832496761346164,1323.0872433196864,42.004620872707825)"/>
+<polyline style="fill: url(#dna_3968610739); mix-blend-mode: source-over; fill-opacity: 1;" sketchjs:tool="polyline" points="18.4,19.87 187.81,22.77 165,0 0,0 18.4,19.87 undefined,undefined" transform="matrix(7.82692278257826,0,0,7.7933603684680195,33.414753572518634,1822.1064251264577)"/>
+<path style="fill: #454545; mix-blend-mode: source-over; fill-opacity: 1; vector-effect: non-scaling-stroke;" sketchjs:tool="rectangle" d="M0 0 L80.097 0 80.097 204.831 0 204.831 z" transform="matrix(7.79336036846802,0,0,8.085375452313118,91.35727477783684,104.20949543807522)"/>
+<path style="fill: url(#dna_3282111068); mix-blend-mode: source-over; fill-opacity: 1; vector-effect: non-scaling-stroke;" sketchjs:tool="radialBurst" d="M46.015 46.015 L21.359 7.163 70.671 7.163 46.015 46.015 70.671 84.867 21.359 84.867 z" transform="matrix(7.792970703696819,0.07793230479777824,-0.2126476003887562,21.2640512088159,56.432626244274445,-49.12983343715919)"/>
+<path style="fill: url(#dna_3354300712); mix-blend-mode: source-over; fill-opacity: 1; vector-effect: non-scaling-stroke;" sketchjs:tool="radialBurst" d="M54.97 54.97 L25.515 8.557 84.424 8.557 54.97 54.97 84.424 101.382 25.515 101.382 z" transform="matrix(0.05931484596840623,-7.7931346441503075,6.728649907247733,0.05121287531241484,33.2368478867735,1356.5662020195357)"/>
+</svg>
