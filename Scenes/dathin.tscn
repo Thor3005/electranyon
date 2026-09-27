@@ -15,6 +15,9 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_wvfmt"]
 radius = 121.69634
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_cvyon"]
+radius = 164.04877
+
 [node name="Node2D" type="Node2D" unique_id=183356206]
 
 [node name="Machine" parent="." unique_id=827521170 instance=ExtResource("1_oam1e")]
@@ -48,7 +51,8 @@ zoom = Vector2(0.26, 0.26)
 
 [node name="Particle" type="CharacterBody2D" parent="." unique_id=1109580766]
 z_index = 1
-position = Vector2(2518, 1480)
+position = Vector2(2707, 1080)
+collision_layer = 0
 script = ExtResource("3_5nx5k")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Particle" unique_id=73098220]
@@ -57,131 +61,19 @@ shape = SubResource("CircleShape2D_wvfmt")
 [node name="Sprite2D" type="Sprite2D" parent="Particle" unique_id=677089400]
 texture = ExtResource("4_kii0l")
 
-[node name="Particle2" type="CharacterBody2D" parent="." unique_id=730918309]
-z_index = 1
-position = Vector2(2311, 883)
-script = ExtResource("3_5nx5k")
+[node name="Click" type="Area2D" parent="Particle" unique_id=1240984065]
+collision_mask = 0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Particle2" unique_id=1293120328]
-shape = SubResource("CircleShape2D_wvfmt")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Particle/Click" unique_id=2079675539]
+shape = SubResource("CircleShape2D_cvyon")
 
-[node name="Sprite2D" type="Sprite2D" parent="Particle2" unique_id=1474053463]
-texture = ExtResource("4_kii0l")
-
-[node name="Particle3" type="CharacterBody2D" parent="." unique_id=1428760557]
-z_index = 1
-position = Vector2(1755, 1131)
-script = ExtResource("3_5nx5k")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Particle3" unique_id=1275933392]
-shape = SubResource("CircleShape2D_wvfmt")
-
-[node name="Sprite2D" type="Sprite2D" parent="Particle3" unique_id=655272720]
-texture = ExtResource("4_kii0l")
-
-[node name="Particle4" type="CharacterBody2D" parent="." unique_id=1839988563]
-z_index = 1
-position = Vector2(3556, 479)
-script = ExtResource("3_5nx5k")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Particle4" unique_id=1541090239]
-shape = SubResource("CircleShape2D_wvfmt")
-
-[node name="Sprite2D" type="Sprite2D" parent="Particle4" unique_id=2019425607]
-texture = ExtResource("4_kii0l")
-
-[node name="Particle5" type="CharacterBody2D" parent="." unique_id=774836917]
-z_index = 1
-position = Vector2(2890, 502)
-script = ExtResource("3_5nx5k")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Particle5" unique_id=1544108823]
-shape = SubResource("CircleShape2D_wvfmt")
-
-[node name="Sprite2D" type="Sprite2D" parent="Particle5" unique_id=841905577]
-texture = ExtResource("4_kii0l")
-
-[node name="Particle6" type="CharacterBody2D" parent="." unique_id=704512480]
-z_index = 1
-position = Vector2(3919, 1849)
-script = ExtResource("3_5nx5k")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Particle6" unique_id=412796170]
-shape = SubResource("CircleShape2D_wvfmt")
-
-[node name="Sprite2D" type="Sprite2D" parent="Particle6" unique_id=748154588]
-texture = ExtResource("4_kii0l")
-
-[node name="Particle7" type="CharacterBody2D" parent="." unique_id=1070215641]
-z_index = 1
-position = Vector2(1488, 369)
-script = ExtResource("3_5nx5k")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Particle7" unique_id=330323913]
-shape = SubResource("CircleShape2D_wvfmt")
-
-[node name="Sprite2D" type="Sprite2D" parent="Particle7" unique_id=469155125]
-texture = ExtResource("4_kii0l")
-
-[node name="Particle8" type="CharacterBody2D" parent="." unique_id=1926655224]
-z_index = 1
-position = Vector2(362, 1821)
-script = ExtResource("3_5nx5k")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Particle8" unique_id=1793072627]
-shape = SubResource("CircleShape2D_wvfmt")
-
-[node name="Sprite2D" type="Sprite2D" parent="Particle8" unique_id=936709244]
-texture = ExtResource("4_kii0l")
-
-[node name="Particle9" type="CharacterBody2D" parent="." unique_id=1579324946]
-z_index = 1
-position = Vector2(1952, 1843)
-script = ExtResource("3_5nx5k")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Particle9" unique_id=2130614535]
-shape = SubResource("CircleShape2D_wvfmt")
-
-[node name="Sprite2D" type="Sprite2D" parent="Particle9" unique_id=1813057777]
-texture = ExtResource("4_kii0l")
-
-[node name="Particle10" type="CharacterBody2D" parent="." unique_id=624305502]
-z_index = 1
-position = Vector2(3395, 1885)
-script = ExtResource("3_5nx5k")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Particle10" unique_id=659152079]
-shape = SubResource("CircleShape2D_wvfmt")
-
-[node name="Sprite2D" type="Sprite2D" parent="Particle10" unique_id=304725522]
-texture = ExtResource("4_kii0l")
-
-[node name="Particle11" type="CharacterBody2D" parent="." unique_id=1981266056]
-z_index = 1
-position = Vector2(1097, 1829)
-script = ExtResource("3_5nx5k")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Particle11" unique_id=1944708225]
-shape = SubResource("CircleShape2D_wvfmt")
-
-[node name="Sprite2D" type="Sprite2D" parent="Particle11" unique_id=941466316]
-texture = ExtResource("4_kii0l")
-
-[node name="Particle12" type="CharacterBody2D" parent="." unique_id=959346736]
-z_index = 1
-position = Vector2(2760, 1856)
-script = ExtResource("3_5nx5k")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Particle12" unique_id=1318470606]
-shape = SubResource("CircleShape2D_wvfmt")
-
-[node name="Sprite2D" type="Sprite2D" parent="Particle12" unique_id=2141744340]
-texture = ExtResource("4_kii0l")
-
-[node name="Label" type="Label" parent="." unique_id=2134216905]
-offset_left = 193.0
-offset_top = 1980.0
-offset_right = 4339.0
-offset_bottom = 2145.0
+[node name="Label" type="Label" parent="Particle" unique_id=2134216905]
+offset_left = -257.0
+offset_top = 189.0
+offset_right = 3889.0
+offset_bottom = 354.0
 theme_override_font_sizes/font_size = 120
 text = "Hello, if you are reading this, I can publish changes to the repo correctly"
+
+[connection signal="mouse_entered" from="Particle/Click" to="Particle" method="_on_click_mouse_entered"]
+[connection signal="mouse_exited" from="Particle/Click" to="Particle" method="_on_click_mouse_exited"]
